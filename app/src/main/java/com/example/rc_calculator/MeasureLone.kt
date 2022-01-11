@@ -29,6 +29,4 @@ class MeasureLone<T> : MutableLiveData<T>() {
     }
 
 
-
-
 }

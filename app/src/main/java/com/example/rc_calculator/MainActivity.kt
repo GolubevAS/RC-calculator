@@ -2,40 +2,56 @@ package com.example.rc_calculator
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import android.widget.Toast
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
+import androidx.navigation.NavController
+import androidx.navigation.Navigation
 import com.example.rc_calculator.databinding.ActivityMainBinding
+import com.example.rc_calculator.view.screens.start.StartViewModel
+
+
 
 class MainActivity : AppCompatActivity() {
 
-    private var viewModel: ViewModel? = null
+    lateinit var binding: ActivityMainBinding
+    lateinit var navController: NavController
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
 
-        viewModel = ViewModelProviders.of(this).get(ViewModel::class.java)
+        // крепим Биндинг
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
-        viewModel.apply {
-            this!!.getInvalidMessage().observe(
-                this@MainActivity,
-                Observer { shouldShow ->
-                    if (shouldShow != null && shouldShow) {
-                        APP.showErrorMessage()
-                    }
-                })
+        // крепим константу
+        APP = this
+
+        // крепим Навигатор
+        navController = Navigation.findNavController(this, R.id.nav_fragment)
+
+
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.setting_menu, menu)
+        return super.onCreateOptionsMenu(menu)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        if (item.itemId == R.id.butSettings) {
+            APP.navController.navigate(R.id.action_startFragment_to_settingFragment)
+            return true
         }
-
-        val binding : ActivityMainBinding? = DataBindingUtil.setContentView(this, R.layout.activity_main)
-        binding?.let{
-            it.viewModel = viewModel
-            it.setLifecycleOwner(this)
-        }
+        return super.onOptionsItemSelected(item)
     }
 
     private fun showErrorMessage() {
         Toast.makeText(this, getString(R.string.error_message), Toast.LENGTH_SHORT).show()
     }
+
 }

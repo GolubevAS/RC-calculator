@@ -1,14 +1,15 @@
-package com.example.rc_calculator
+package com.example.rc_calculator.view.screens.start
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import com.example.rc_calculator.MeasureLone
 import com.udojava.evalex.Expression
 import java.math.BigDecimal
 import java.util.*
 
 
 
-class ViewModel : ViewModel() {
+class StartViewModel : ViewModel() {
 
     private var isNumberPositive = true
     private val validOperators = Arrays.asList("+", "-", "/", "*")
