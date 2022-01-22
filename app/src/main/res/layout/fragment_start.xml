@@ -2,10 +2,10 @@
 <layout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white">
 
     <data>
-
         <variable
             name="viewModel"
             type="com.example.rc_calculator.view.screens.start.StartViewModel" />
@@ -39,7 +39,7 @@
             android:layout_marginEnd="10dp"
             android:fontFamily="@font/montserrat"
             android:gravity="end"
-            android:text="@{viewModel.getCurrentExpression}"
+            android:text="@{viewModel.currentExpression}"
             android:textColor="@android:color/black"
             app:autoSizeTextType="uniform"
             app:layout_constraintBottom_toTopOf="@id/operation_steps_area_divider"
