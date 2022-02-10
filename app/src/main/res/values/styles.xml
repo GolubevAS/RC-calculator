@@ -3,7 +3,7 @@
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <item name="android:colorPrimaryDark">@color/input_pad_background</item>
         <item name="android:windowBackground">@color/input_pad_background</item>
-        <item name="android:navigationBarColor">@color/operators_pad_background</item>
+        <item name="android:navigationBarColor">@color/operators_pad_background_dark</item>
     </style>
 
     <!-- Pad Item Base Style -->
@@ -27,6 +27,29 @@
     <style name="PadItem.Number" parent="PadItem">
         <item name="android:textSize">30sp</item>
         <item name="android:background">@drawable/number_item_selector</item>
+    </style>
+
+    <!-- Dark Theme -->
+    <style name="DarkItem" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:fontFamily">@font/montserrat</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="DarkItem.Main" parent="DarkItem">
+        <item name="android:textSize">25sp</item>
+        <item name="android:background">@drawable/pad_item_selector_dark</item>
+    </style>
+
+    <style name="DarkItem.Operator" parent="DarkItem">
+        <item name="android:background">@drawable/operator_item_selector_dark</item>
+    </style>
+
+    <style name="DarkItem.Number" parent="DarkItem">
+        <item name="android:textSize">30sp</item>
+        <item name="android:background">@drawable/number_item_selector_dark</item>
     </style>
 
 </resources>

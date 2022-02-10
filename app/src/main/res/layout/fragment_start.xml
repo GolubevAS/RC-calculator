@@ -86,7 +86,7 @@
         <!-- First Pad Row -->
         <TextView
             android:id="@+id/ac"
-            style="@style/PadItem.Main"
+            style="@style/DarkItem.Main"
             android:onClick="@{() -> viewModel.onClear()}"
             android:text="@string/ac"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -96,7 +96,7 @@
 
         <TextView
             android:id="@+id/plus_minus_switch"
-            style="@style/PadItem.Main"
+            style="@style/DarkItem.Main"
             android:onClick="@{() -> viewModel.onChange()}"
             android:text="@string/value_update"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -106,7 +106,7 @@
 
         <TextView
             android:id="@+id/percentage"
-            style="@style/PadItem.Main"
+            style="@style/DarkItem.Main"
             android:onClick="@{() -> viewModel.onOperatorAdd(@string/percentage)}"
             android:text="@string/percentage"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -116,7 +116,7 @@
 
         <TextView
             android:id="@+id/divide"
-            style="@style/PadItem.Operator"
+            style="@style/DarkItem.Operator"
             android:onClick="@{() -> viewModel.onOperatorAdd(@string/divide_operator)}"
             android:text="@string/divide"
             android:textSize="45sp"
@@ -128,7 +128,7 @@
         <!-- Second Pad Row -->
         <TextView
             android:id="@+id/seven"
-            style="@style/PadItem.Number"
+            style="@style/DarkItem.Number"
             android:onClick="@{() -> viewModel.onOperatorAdd(@string/seven)}"
             android:text="@string/seven"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -138,7 +138,7 @@
 
         <TextView
             android:id="@+id/eight"
-            style="@style/PadItem.Number"
+            style="@style/DarkItem.Number"
             android:onClick="@{() -> viewModel.onOperatorAdd(@string/eight)}"
             android:text="@string/eight"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -148,7 +148,7 @@
 
         <TextView
             android:id="@+id/nine"
-            style="@style/PadItem.Number"
+            style="@style/DarkItem.Number"
             android:onClick="@{() -> viewModel.onOperatorAdd(@string/nine)}"
             android:text="@string/nine"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -158,7 +158,7 @@
 
         <TextView
             android:id="@+id/multiply"
-            style="@style/PadItem.Operator"
+            style="@style/DarkItem.Operator"
             android:onClick="@{() -> viewModel.onOperatorAdd(@string/multiply_expression)}"
             android:text="@string/multiply"
             android:textSize="34sp"
@@ -170,7 +170,7 @@
         <!-- Third Pad Row -->
         <TextView
             android:id="@+id/four"
-            style="@style/PadItem.Number"
+            style="@style/DarkItem.Number"
             android:onClick="@{() -> viewModel.onOperatorAdd(@string/four)}"
             android:text="@string/four"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -180,7 +180,7 @@
 
         <TextView
             android:id="@+id/five"
-            style="@style/PadItem.Number"
+            style="@style/DarkItem.Number"
             android:onClick="@{() -> viewModel.onOperatorAdd(@string/five)}"
             android:text="@string/five"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -190,7 +190,7 @@
 
         <TextView
             android:id="@+id/six"
-            style="@style/PadItem.Number"
+            style="@style/DarkItem.Number"
             android:onClick="@{() -> viewModel.onOperatorAdd(@string/six)}"
             android:text="@string/six"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -200,7 +200,7 @@
 
         <TextView
             android:id="@+id/plus"
-            style="@style/PadItem.Operator"
+            style="@style/DarkItem.Operator"
             android:onClick="@{() -> viewModel.onOperatorAdd(@string/plus)}"
             android:text="@string/plus"
             android:textSize="45sp"
@@ -212,7 +212,7 @@
         <!-- Fourth Pad Row -->
         <TextView
             android:id="@+id/one"
-            style="@style/PadItem.Number"
+            style="@style/DarkItem.Number"
             android:onClick="@{() -> viewModel.onOperatorAdd(@string/one)}"
             android:text="@string/one"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -222,7 +222,7 @@
 
         <TextView
             android:id="@+id/two"
-            style="@style/PadItem.Number"
+            style="@style/DarkItem.Number"
             android:onClick="@{() -> viewModel.onOperatorAdd(@string/two)}"
             android:text="@string/two"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -232,7 +232,7 @@
 
         <TextView
             android:id="@+id/three"
-            style="@style/PadItem.Number"
+            style="@style/DarkItem.Number"
             android:onClick="@{() -> viewModel.onOperatorAdd(@string/three)}"
             android:text="@string/three"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -242,7 +242,7 @@
 
         <TextView
             android:id="@+id/minus"
-            style="@style/PadItem.Operator"
+            style="@style/DarkItem.Operator"
             android:onClick="@{() -> viewModel.onOperatorAdd(@string/minus)}"
             android:text="@string/minus"
             android:textSize="45sp"
@@ -254,7 +254,7 @@
         <!-- Fifth Pad Row -->
         <TextView
             android:id="@+id/zero"
-            style="@style/PadItem.Number"
+            style="@style/DarkItem.Number"
             android:onClick="@{() -> viewModel.onOperatorAdd(@string/zero)}"
             android:text="@string/zero"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -264,7 +264,7 @@
 
         <TextView
             android:id="@+id/comma"
-            style="@style/PadItem.Number"
+            style="@style/DarkItem.Number"
             android:onClick="@{() -> viewModel.onOperatorAdd(@string/comma_expression)}"
             android:text="@string/comma"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -274,7 +274,7 @@
 
         <TextView
             android:id="@+id/equals"
-            style="@style/PadItem.Main"
+            style="@style/DarkItem.Main"
             android:onClick="@{() -> viewModel.onResult()}"
             android:text="@string/equals"
             app:layout_constraintBottom_toBottomOf="parent"

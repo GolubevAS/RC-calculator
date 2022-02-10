@@ -16,4 +16,14 @@
     <color name="dark_operators_pad_background">#2a6b62</color>
     <color name="numbers_background">#6ecabd</color>
     <color name="equals_background">#81d1c5</color>
+
+    <!-- dark theme -->
+    <color name="input_pad_background_dark">#FFFFFFFF</color>
+    <color name="operators_pad_background_dark">#242727</color>
+    <color name="equals_background_dark">#242727</color>
+    <color name="numbers_background_dark">#242727</color>
+    <color name="dark_operators_pad_background_dark">#E91E63</color>
+
+
+
 </resources>

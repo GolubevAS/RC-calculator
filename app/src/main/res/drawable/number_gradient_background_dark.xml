@@ -3,9 +3,9 @@
 
     <gradient
         android:angle="0"
-        android:centerColor="@color/operators_pad_background"
-        android:endColor="@color/numbers_background"
-        android:startColor="@color/numbers_background"
+        android:centerColor="@color/dark_operators_pad_background_dark"
+        android:endColor="@color/numbers_background_dark"
+        android:startColor="@color/numbers_background_dark"
         android:gradientRadius="500px"
         android:type="radial" />
 
